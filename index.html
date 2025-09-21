@@ -1,42 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiladiCode</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">ASH</div>
-        <button class="contact-btn">CONTACT</button>
-    </header>
+    <head>
+        <title>Gaming Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="wisth=device-width , initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="head-left">
+                    <img src="logo.png" alt="logo">
+                    <button>PRODUCTS</button>
+                </div>
 
-    <main>
-        <div class="title-section">
-            <h1>WEB DEVELOPER</h1>
-            <h2>WEB DEV</h2>
-            <div class="location">
-                <p>BASED<br>IN<br>INDIA</p>
-            </div>
+                <div class="head-right">
+                    <p><a href="#">NEXUS</a></p>
+                    <p><a href="#">VAULT</a></p>
+                    <p><a href="#">ABOUT</a></p>
+                    <p><a href="#">SERVICES</a></p>
+                    <p><a href="#">CONTACT</a></p>
+                </div>
+            </header>
+
+            <section class="hero-section autoBlur">
+                <div class="hero-vid">
+                    <video loop autoplay muted plays-inline class="hero-video">
+                        <source src="hero-1.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="hero-info">
+                        <h1>REDEFINE</h1>
+                        <p>Enter the metagame layer unleash the Play Economy</p>
+                        <button>Watch Trailer</button>
+                    </div>
+
+                    <h1 class="gaming-text">GAMING</h1>
+                    <div class="next-btn">NEXT</div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <p>WELCOME TO ZENTRY</p>
+                <div class="autoBlur">
+                <h1>DISCOVER THE WORLD'S LARGEST SHARED ADVENTURE</h1></div>
+                
+
+                <div class="image-box autoTakeFull">
+                    <img src="about.webp" alt="about-img">
+                </div>
+                <h4>Game of Games begins your life , now an epic MMORPG</h4>
+                <h5>Zentry unites every player from countless games and platforms providing unlimited and authentic gaming experience</h5>
+            </section>
+
+            <section class="info-section">
+                <h3>INTO THE METAGAME LAYER</h3>
+                <p>A cross platform metagame app , turning your dreams into reality</p>
+
+                <div class="info-cards">
+                    <div class="card autoDisplay">
+                        <h1>RADIANT
+                        </h1>
+                        <p>An anime and gaming inspired NFT</p>
+
+                        <video src="feature-1.mp4" autoplay muted loop plays-inline type="video.mp4"></video>
+                        <button>COMING SOON...</button>
+                    </div>
+                    <div class="card autoDisplay">
+                        <h1>ZIGMA
+                        </h1>
+                        <p>An anime and gaming inspired NFT</p>
+
+                        <video src="feature-2.mp4" autoplay muted loop plays-inline type="video.mp4"></video>
+                        <button>COMING SOON...</button>
+                    </div>
+                    <div class="card autoDisplay">
+                        <h1>NEXUS
+                        </h1>
+                        <p>An anime and gaming inspired NFT</p>
+
+                        <video src="feature-3.mp4" autoplay muted loop plays-inline type="video.mp4"></video>
+                        <button>COMING SOON...</button>
+                    </div>
+                    <div class="card autoDisplay">
+                        <h1>AZUL
+                        </h1>
+                        <p>An anime and gaming inspired NFT</p>
+
+                        <video src="feature-4.mp4" autoplay muted loop plays-inline type="video.mp4"></video>
+                        <button>COMING SOON...</button>
+                    </div>
+                    <div class="card autoDisplay">
+                        
+
+                        <video src="feature-5.mp4" autoplay muted loop plays-inline type="video.mp4"></video>
+                        
+                    </div>
+                    <div class="card autoDisplay">
+                        
+
+                    <h1>MORE COMING SOON</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <p>JOIN ZENTRY</p>
+                <div class="autoBlur">
+                <h1>LET'S BUILD THE NEW ERA OF GAMING TOGETHER</h1></div>
+                <button>CONTACT US</button>
+                <img class="img1" src="swordman.webp" alt="contact-img">
+                <img class="img2" src="contact-1.webp" alt="contact-img">
+                <img class="img3" src="contact-2.webp" alt="contact-img">
+
+            </section>
+
+            <section class="footer">
+                <p>@BLR 2025. All rights reserved.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                </ul>
+                <p>PRIVACY POLICY.</p>
+            </section>
         </div>
 
-        <div class="bio-section">
-            <p class="bio">
-                WITH <span style="color:#76b0ab">OVER FOUR YEARS </span> OF REFINED EXPERTISE
-                THIS DESIGNER HAS METICULOUSLY CRAFTED
-                SEAMLESS AND INTUITIVESUR <span style="color:#786aba"> USER WEBSITES</span>.
-            </p>
-        </div>
+        <script src="app.js"></script>
 
-        <div class="scroll-down">
-            
-        </div>
-        <spline-viewer class="planet-3D" url="https://prod.spline.design/8caj7p7a-141mlMA/scene.splinecode"></spline-viewer>
-    </main>
-
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
-    
-    
-</body>
+    </body>
 </html>
