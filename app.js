@@ -1,14 +1,39 @@
-const nextButton = document.getQuerySelector('.next-btn');
-const video = document.getQuerySelector(".hero-video");
+document.addEventListener("mousemove",(event) => {
+    const x = event.clientX / window.innerWidth - 0.5;
+    const y = event.clientY / window.innerHeight - 0.5;
 
-const moveList = ['hero-1.mp4','hero-2.mp4','hero-3.mp4','hero-4.mp4']
+    document.querySelectorAll(".parallax").forEach((element) => {
+        const speed = element.getAttribute("data-speed");
+        element.style.transform = `translate(${x*speed*20}px , ${y*speed *20}px)`;
+    })
+} )
 
-let index = 0
-nextButton.addEventListener('click',function(){
-    index += 1
-    video.scr = moveList[index];
 
-    if (index === 3){
-        index = -1;
-    }
+const signinButton = document.getElementById("signinButton");
+const signinPage = document.getElementById("signinPage");
+const closeIcon = document.getElementById("closeIcon");
+
+signinButton.addEventListener("click", function(){
+    signinPage.classList.remove("closeSignIn");
+    signinPage.classList.add("openSignIn")
+});
+
+closeIcon.addEventListener("click",function(){
+    signinPage.classList.remove("openSignIn");
+    signinPage.classList.add("closeSignIn")
+});
+
+
+const sideBar = document.querySelector(".sidebar");
+const menuButton = document.querySelector(".menu-icon");
+const closeButton = document.querySelector(".close-icon");
+
+menuButton.addEventListener("click",function(){
+    sideBar.classList.remove("close-sidebar")
+    sideBar.classList.add("open-sidebar")
+})
+
+closeButton.addEventListener("click",function(){
+    sideBar.classList.remove("open-sidebar")
+    sideBar.classList.add("close-sidebar")
 })
